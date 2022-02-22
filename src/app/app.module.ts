@@ -7,7 +7,6 @@ import { NavbarComponent } from './components/navbar/navbar.component'
 import { ButtonComponent } from './components/toolbar/button/button.component'
 import { ToolbarComponent } from './components/toolbar/toolbar/toolbar.component'
 import { SearchComponent } from './components/page/search/search.component'
-import { LeftIerarchyComponent } from './components/page/left-ierarchy/left-ierarchy.component'
 import { UserProfileComponent } from './components/page/userMeta/user-profile/user-profile.component'
 import { UserPermissionsComponent } from './components/page/userMeta/user-permissions/user-permissions.component'
 import { EffectivePermissionsComponent } from './components/page/userMeta/effective-permissions/effective-permissions.component'
@@ -28,7 +27,7 @@ import { PageComponent } from './components/page/page/page.component'
     ButtonComponent,
     ToolbarComponent,
     SearchComponent,
-    LeftIerarchyComponent,
+
     UserProfileComponent,
     UserPermissionsComponent,
     EffectivePermissionsComponent,
