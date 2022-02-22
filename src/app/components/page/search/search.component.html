@@ -1,1 +1,6 @@
-<p>search works!</p>
+<form class="search">
+  <div class="input">
+    <mat-icon style="color: #007344;">search</mat-icon>
+    <input (input)="writeIn(ugsearch.value,'ugsearch' )" #ugsearch type="text" />
+  </div>
+</form>

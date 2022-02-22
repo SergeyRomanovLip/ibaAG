@@ -1,0 +1,7 @@
+.page {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 33%;
+}
+.page div {
+}

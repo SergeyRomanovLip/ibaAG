@@ -1,0 +1,50 @@
+.left {
+  padding: 0px;
+  margin: 0;
+}
+.card {
+  z-index: 50;
+  cursor: pointer;
+  height: 42px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+.icon {
+  color: #007344;
+}
+.itemList {
+  max-height: 0;
+  opacity: 0;
+  transition: all ease 0.1s;
+}
+.itemList.active {
+  max-height: 50vh;
+  opacity: 1;
+}
+.itemList.active .item {
+  max-height: 42px;
+  height: 42px;
+}
+.item {
+  padding-left: 25px;
+  max-height: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  transition: all ease 0.1s;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 10%), 0px 2px 2px 0px rgb(0 0 0 / 4%), 0px 1px 5px 0px rgb(0 0 0 / 2%);
+}
+
+.item:hover {
+  color: white;
+  background-color: #007344;
+}
+.item:hover .icon {
+  color: white !important;
+  background-color: #007344 !important;
+}

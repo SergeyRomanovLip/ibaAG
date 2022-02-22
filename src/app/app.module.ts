@@ -17,8 +17,11 @@ import { MatCardModule } from '@angular/material/card'
 import { MatButtonModule } from '@angular/material/button'
 import { MatMenuModule } from '@angular/material/menu'
 import { MatToolbarModule } from '@angular/material/toolbar'
-import { MatIconModule } from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon'
+
 import { PageComponent } from './components/page/page/page.component'
+import { LeftComponent } from './components/page/left/left.component'
+import { SearchService } from './services/search.service'
 
 @NgModule({
   declarations: [
@@ -27,15 +30,24 @@ import { PageComponent } from './components/page/page/page.component'
     ButtonComponent,
     ToolbarComponent,
     SearchComponent,
-
     UserProfileComponent,
     UserPermissionsComponent,
     EffectivePermissionsComponent,
-    PageComponent
+    PageComponent,
+    LeftComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MatButtonModule, MatMenuModule, MatToolbarModule, MatIconModule, MatCardModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MatButtonModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatCardModule,
+    BrowserAnimationsModule,
+  ],
 
-  providers: [ApiService],
-  bootstrap: [AppComponent]
+  providers: [ApiService, SearchService],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,0 +1,16 @@
+<div class="left">
+  <div class="card" (click)="switchCollapsed('users')"><mat-icon class="icon">dns</mat-icon> Local Users</div>
+  <div [ngClass]="collapsedUsers?'active':''" class="itemList">
+    <div class="item" *ngFor="let user of users">
+      <mat-icon class="icon" style="color: #007344;">account_box</mat-icon>
+      {{user.name}}
+    </div>
+  </div>
+  <div class="card" (click)="switchCollapsed('groups')"><mat-icon class="icon">dns</mat-icon> Local Groups</div>
+  <div [ngClass]="collapsedGroups?'active':''" class="itemList">
+    <div class="item" *ngFor="let group of groups">
+      <mat-icon class="icon" style="color: #007344;">assignment_ind</mat-icon>
+      {{group.title}}
+    </div>
+  </div>
+</div>
